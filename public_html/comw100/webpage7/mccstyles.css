@@ -3,3 +3,21 @@ h1 {
   color: #A49719;
   text-align: center;
 }
+
+.topmenu {
+    background-color: #8E8E8E;
+    text-align: center;
+    word-spacing: normal;  
+}
+
+a {
+    word-spacing: normal;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+}
+
+.bodytext {
+    color: #A49719;
+}
