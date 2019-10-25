@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+     
+    <h1>Blog</h1>
+    
+    <hr>
+    
+    <p class="headcenter">
+      <a href="./index.html">Home</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./tutorials.html">Tutorials</a>
+      <a href="./contact.html">Contact</a>
+    </p>
+
+    <h2 class="headcenter">How to Port Forward</h2>
+    
+    <p class="center">Author: <b>Kenneth Andrews</b></p>
+    <p class="center"><em>10/21/19</em></p>
+    
+    <p class="center">If you have ever tried to set up a local game or file server you may have run into a brickwall with getting everything connected. 2 hours into trying to get your friends connected you figure out you need to port forward. If you have never heard of port forwarding this probably sounds a lot like latin. However, you'll find that it's not all that complicated.</p>
+    
+    <h3 class="headcenter">What is Port Forwarding</h3>
+    <p class="center">In short, port forwarding is nothing more than telling your router "if you recieve packets with <em>this port</em> send those packets to <em>Computer A</em>". Every PC, or any device with networking capability for that matter has an ip address. When you are trying to connect to your server your client uses an IP address to facilitate that communication. Here's the problem though. When you are connecting to a local pc from outside your network, the client can't communicate with the server via it's local ip. Instead you have to use your external IP address which your ISP assigns you. The packets are then sent from the client to your ISP and are finally recieved by your router. Your router however has no idea what to do with these packets. You need tell your router to forward those packets to the local machine in questionr; your server. See, not such a dead language after all.</p>
+
+    <h3 class="headcenter">How to Port Forward</h3>
+    
+    <h4 class="headcenter">Log into your router</h4>
+    
+    <p class="center">The first step in port forwarding is getting into your routers administration panel. This is fairly straight forward, but the proccess can differ depending on your routers specific model.</p>
+    
+    <p class="center"><b>Open up the local shell</b></p>
+    <ul class="center">
+      <li>In Windows click start, click run, type <b>cmd</b></li>
+      <li>In Mac or Linux open the <b>Terminal</b></li>
+    </ul>
+
+    <p class="center">Type in <b>ipconfig</b> in windows, or <b>ifconfig</b> in linux &amp; MacOS. Take note of your <em>ipv4 address</em> and <em>default gateway</em>. Type in <b>netstat -rn</b> in mac or linux if your default gateway is unlisted.</p>
+    <img class="imgpost" src="./media/cmd.jpeg" alt="CMD Ipconfig"><br> 
+    <p class="center">Open up your favorite web browser and paste the default gateway you got from the shell earlier.</p>
+    
+    <p class="center">Enter the routers default username and password. Unfortunatly this varies from one model to another. Generally it will be some combination of admin &amp; password, or admin &amp; admin. If that doesn't work, you may have to look at the model listed on the router and do a web search for it's default name and password. You can change these defaults once you are logged in.</p>
+
+    <img class="imgpost" src="./media/adminpanel.png" alt="Router admin panel"><br>
+  
+    <p class="center">Navigate to the port forwarding section. This may look different depending on your router. For example it may be under a networking, advanced, firewall, or even gaming tab.</p>
+
+    <p class="center">Now you should see a list of boxes you can fill out with the port forwarding information. Under ports you will want to use the port number associated with the application you are using. For example: a Minecraft server has the port of 25565. If there are two boxes which ask for a range of ports you can just use the same port twice, 25565-25565.</p>
+
+    <p class="center">For the Ipv4 address you'll want to use the local ip of the computer you took note of in the terminal.</p>
+    
+    <p class="center">If you are given the option, go ahead and give it a name you'll remember and hit save.</p>
+
+    <p class ="center"><em>Congratulations</em>. You've just portforwarded</p>
+  </body>
+</html>

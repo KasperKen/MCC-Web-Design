@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> <title>HTML Forms Test</title>
+    <script>
+      function display() {
+        DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+        message = "<ul><li><b>First Name: </b>" + document.test.firstname.value;
+        message += "<li><b>Last Name: </b>" + document.test.lastname.value;
+        message += "<li><b>Email: </b>" + document.test.email.value;
+        message += "<li><b>Understanding Level: </b>" + document.test.understanding.value;
+        message += "<li><b>Pass/Fail: </b>" + document.test.passfail.value;
+        message += "<li><b>Comments: </b>" + document.test.comments.value + "</ul>";
+        DispWin.document.write(message);
+      }
+    </script>
+  </head>
+  <body>
+    <p>HTML Forms Test</p>
+    <form name="test" method="post" action="index.html">
+      <p>
+        <label>First Name</label>
+        <input type = "text" name = "first" id = "firstname">
+      </p>
+      <p>
+        <label>Last Name</label>
+        <input type="text" name="last" id="lastname">
+      </p>
+      <p>
+        <label>Email</label>
+        <input type="text" name="email" id="email">
+      </p>
+      <p>
+        <label>How well do you understand HTML code? (1-10)</label>
+        <input type="range" name="understanding" id="understanding" min=0 max=10 value=5>
+      </p>
+      <p>How well do you think you will do in this class?</p>
+      <p>
+        <input type="radio" name="passfail" value="pass" id="passfail_0">
+        <label>Pass</label><br>
+        <input type="radio" name="passfail" value="fail" id="passfail_1">
+        <label>Fail</label><br>
+      </p>
+      <p>
+        <label>Comments</label>
+        <textarea name="comments" id="comments" rows=4 cols=35 placeholder="This is a test of the comment box"></textarea>
+      </p>
+      <p>
+        <input type="submit" name="submit" id="submit" value="Submit" onClick="display();">
+      </p>
+    </form>
+  </body>
+</html>
