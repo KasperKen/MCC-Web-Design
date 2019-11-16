@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+td {
+  text-align: center; 
+}
+
+#trans1 {
+    transform: rotate(30deg) scale(0.6, 0.4);
+}
+
+.trans2 {
+    background-color: #000000;
+    font-size: 80pt;
+    transition-property: background-color;
+    transition-duration: 1.5s;
+}
+
+.trans2:hover {
+    background-color: #ffffff;
+}
+
+#trans3 {
+  border-radius: 25%;
+  transform: scale(.5)
+
+}
+
+#trans3:active {
+  transition: transform 1.5s;
+  transform: rotate(360deg) scale(1.4, 1) 
+}
+
+.trans4 {
+    font-size: 50pt;
+    color:#000000
+}
+
+.trans4:hover {
+    font-size: 40pt;
+    transition-duration: 1.5s;
+    color: #FFFFFF;
+}
