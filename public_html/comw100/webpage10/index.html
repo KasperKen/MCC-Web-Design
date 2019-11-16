@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Transforms and Transitions</title>
+    <link rel="stylesheet" href="./transforms.css">
+  </head>
+  <body>
+    <h1>CSS Transforms and Transitions</h1>
+    <table width=850 border=2>
+      <tr>
+        <td><h2>Transform#1</h2></td>
+      </tr>
+      <tr>
+        <td>
+          The image below will be transformed in two ways. The image will be rotated by 30 degrees and it will be scaled to 60% of the size in the horizontal direction (~240 px) and 40% of the size in the vertical direction(~107 px).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="./images/mba.jpg" alt="Macbook Air" width=400 height=267 id=trans1>
+        </td>
+      </tr>
+      <tr>
+        <td><h2>Transform#2</h2></td>
+      </tr>
+      <tr>
+        <td>
+          The cell bellow will transition when the mouse hovers over it displaying the hidden text. The background color will change from black to white over a period of 1.5 seconds.
+        </td>
+      </tr>
+      <tr>
+        <td><div class="trans2">Amazing Shifting Colors</div></td>
+      </tr>
+      <tr>
+        <td><h2>Transform#3</h2></td>
+      </tr>
+      <tr>
+        <td>
+          The image below begins scaled down to half size using scale(.5). The image has alsa had a border radius of 25% applied to it. It will transform back to just over normal scale while holding a click using scale(1.4, 1). It starts at a larger size because the table row would otherwise resize the table row. I'm sure I could have set the row's size in the html, but this accomplishes the same thing using transformations instead. I've used transform .8s to give the transformations a short animation effect.
+        </td>
+      </tr>
+      <tr>
+        <td><img src="./images/mma.jpg" alt="mma" id="trans3" height=450 width=600></td>
+      </tr>
+      <tr>
+        <td><h2>Transform#4</h2></td>
+      </tr>
+      <tr>
+        <td>
+          The below text applies a font color and size change transformation. First the font size changes to 50pts. The transition speed is then changed to 1.5. Finally the font color changes from black to white and the font-size changes from 50pt to 40pt to give the appearance of of a shrinking/dissapearing text.
+        </td>
+      </tr>
+      <tr>
+        <td><div class="trans4">Amazing Hiding Text</div></td>
+      </tr>
+    </table>
+    <br><br>
+  </body>
+</html>
