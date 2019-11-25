@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Kenneth Andrews">
+
+    <title>ByteAcademy</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <img src="./images/blog-header-image.jpg" alt="Blog Banner">
+      <div class=carousel-caption>
+        <h1 class="display-2">Blog</h1>
+      </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark box-shadow sticky-top">
+      <div class="container-fluid"> 
+        <a class="navbar-brand" href="./index.html"><strong>ByteAcademy</strong></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./blog.html">blog</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./tutorials.html">tutorials</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./media.html">media</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <hr>
+    <br>
+    <br>
+    
+    <div class="container">
+      <div class="row">
+        <div class="card col-md-3">
+          <img class="img-fluid card-top author-image" src="./images/author-image.jpg" alt="Author Image">
+            <div class="container-fluid card-body">
+              <h4 class="author-text">Kenneth Andrews</h4>
+              <div class="container-fluid row col-md-9">
+                <p class="tcenter"><em>Published: 10/21/19</em></p>
+              </div>
+            </div>
+        </div>
+        <div class="row col-md-9">
+        <h1 style="margin-right: 43%; margin-left: auto;">How to Port Forward</h1>
+        <p style="margin-right: auto; margin-left: 10%;">If you have ever tried to set up a local game or file server you may have run into a brickwall with getting everything connected. 2 hours into trying to get your friends connected you figure out you need to port forward. If you have never heard of port forwarding this probably sounds a lot like latin. However, you'll find that it's not all that complicated.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <h3 class="title-center">What is Port Forwarding</h3>
+    <p class="tcenter">In short, port forwarding is nothing more than telling your router "if you recieve packets with <em>this port</em> send those packets to <em>Computer A</em>". Every PC, or any device with networking capability for that matter has an ip address. When you are trying to connect to your server your client uses an IP address to facilitate that communication. Here's the problem though. When you are connecting to a local pc from outside your network, the client can't communicate with the server via it's local ip. Instead you have to use your external IP address which your ISP assigns you. The packets are then sent from the client to your ISP and are finally recieved by your router. Your router however has no idea what to do with these packets. You need tell your router to forward those packets to the local machine in questionr; your server. See, not such a dead language after all.</p>
+
+    <h3 class="title-center">How to Port Forward</h3>
+    <br> 
+    <h4 class="title-center">Log into your router</h4>
+    <br>
+    
+    <p class="tcenter">The first step in port forwarding is getting into your routers administration panel. This is fairly straight forward, but the proccess can differ depending on your routers specific model.</p>
+    
+    <p class="tcenter"><b>Open up the local shell</b></p>
+    <ul class="tcenter">
+      <li>In Windows click start, click run, type <b>cmd</b></li>
+      <li>In Mac or Linux open the <b>Terminal</b></li>
+    </ul>
+
+    <p class="tcenter">Type in <b>ipconfig</b> in windows, or <b>ifconfig</b> in linux &amp; MacOS. Take note of your <em>ipv4 address</em> and <em>default gateway</em>. Type in <b>netstat -rn</b> in mac or linux if your default gateway is unlisted.</p>
+    <img class="imgpost" src="./images/cmd.jpeg" alt="CMD Ipconfig"><br> 
+    <p class="tcenter">Open up your favorite web browser and paste the default gateway you got from the shell earlier.</p>
+    
+    <p class="tcenter">Enter the routers default username and password. Unfortunatly this varies from one model to another. Generally it will be some combination of admin &amp; password, or admin &amp; admin. If that doesn't work, you may have to look at the model listed on the router and do a web search for it's default name and password. You can change these defaults once you are logged in.</p>
+
+    <img class="imgpost" src="./images/adminpanel.png" alt="Router admin panel"><br>
+  
+    <p class="tcenter">Navigate to the port forwarding section. This may look different depending on your router. For example it may be under a networking, advanced, firewall, or even gaming tab.</p>
+
+    <p class="tcenter">Now you should see a list of boxes you can fill out with the port forwarding information. Under ports you will want to use the port number associated with the application you are using. For example: a Minecraft server has the port of 25565. If there are two boxes which ask for a range of ports you can just use the same port twice, 25565-25565.</p>
+
+    <p class="tcenter">For the Ipv4 address you'll want to use the local ip of the computer you took note of in the terminal.</p>
+    
+    <p class="tcenter">If you are given the option, go ahead and give it a name you'll remember and hit save.</p>
+
+    <p class="tcenter"><em>Congratulations</em>. You've just portforwarded</p>
+    
+    <div class="container-fluid mt-5">
+      <footer class="text-muted">
+        <div class="container">
+          <p class="text-center">
+            <a class="dblock d-md-none"href="#">Back to top</a>
+          </p>
+          <p class="text-center float-md-right">Copyright 2019 Kenneth Andrews</p>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
