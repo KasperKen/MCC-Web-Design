@@ -16,48 +16,40 @@
 
 <body>
   
-  <!--Navigation Menu-->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark box-shadow sticky-top">
-    <div class="container-fluid"> 
-
-      <a class="navbar-brand" href="./index.html"><strong>G&J's Detail Cleaning</strong></a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="collapse_target">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./about.html">About</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <div class="dropdown">
-              <a class ="nav-link dropdown-toggle active" href="services.html">Services</a>
-              <div class="dropdown-content">
-                <a href="#">Commercial</a>
-                <a href="#">Residential</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </nav>
+  <!--Navigation bar-->
+  <div class="sticky-top" id="nav-placeholder">
+  </div>
+  
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("includes/navigation.html");
+    });
+  </script>
 
   
   <!--Main Content Area--> 
   <div class="section-container container-fluid">
     <div class="container-fluid row">
       
+      <!--Contact Links-->
+      <div class="col-12 col-lg-5 pad">
+        <div class="card">
+          <img class="card-img-top" src="./images/office.png" alt="Commercial Services">
+          <div class="card-body">
+            <div>
+              <a class="fa fa-phone contact-link" href="tel:18105223986"> 810-522-3986</a>
+              <a class="fa fa-fax contact-link" href="tel:18105223986"> 810-547-1021</a>
+              <a class="fa fa-envelope contact-link text-lefi" href="mailto:contactus@gjs-cleaning.com"> contactus@gjs-cleaning.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!--Contact Form-->
-      <div class="col-12 col-md-7"> 
+      <div class="col-12 col-lg-7 pad"> 
         <form>
           <div class="form-group row">
-            <label class="col-md-2 col-form-label" for="text">Name:</label> 
+            <label class="col-lg-2 col-form-label" for="text">Name:</label> 
             <div class="col-md-10">
               <div class="input-group">
                 <div class="input-group-prepend">
@@ -70,42 +62,28 @@
             </div>
           </div>
           <div class="form-group row">
-            <label for="" class="col-md-2 col-form-label">Email:</label> 
+            <label for="" class="col-lg-2 col-form-label">Email:</label> 
             <div class="col-md-10">
               <input id="email" name="email" type="text" class="form-control" required="required">
             </div>
           </div>
           <div class="form-group row">
-            <label for="" class="col-md-2 col-form-label">Comment:</label> 
+            <label for="" class="col-lg-2 col-form-label">Comment:</label> 
             <div class="col-md-10">
               <textarea id="comment" name="comment" cols="40" rows="5" class="form-control"></textarea>
             </div>
           </div> 
           <div class="form-group row">
-            <div class="offset-5 col-md-8">
+            <div class="offset-5 col-lg-8">
               <button name="submit" type="submit" class="btn btn-primary">Submit</button>
             </div>
           </div>
         </form>
       </div>
-      
-      <!--Contact Links-->
-      <div class="pad col-md-5">
-        <div class="card">
-          <img class="card-img-top" src="./images/office.png" alt="Commercial Services">
-          <div class="card-body">
-            <div>
-              <a class="fa fa-phone contact-link" href="#"> 810-522-3986</a>
-              <a class="fa fa-fax contact-link" href="#"> 820-547-1021</a>
-              <a class="fa fa-envelope contact-link text-lefi" href="#"> contactus@gjs-cleaning.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="container-fluid row pad">
+      <div class="container-fluid row map-container center">
         <!--map-->
-        <div class="container-fluid contact-container center" style="width: 60%;">
+        <div class="container-fluid map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.1517153628106!2d-83.69693128471206!3d43.122338994613344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882385c9608a0533%3A0xb12ebc0cd6ba8365!2s12127%20Saginaw%20St%2C%20Mt%20Morris%2C%20MI%2048458!5e0!3m2!1sen!2sus!4v1575323442574!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
       </div>
@@ -122,70 +100,15 @@
      </p>
   </div>
 
-
-<!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
-
-  <div class="container-fluid text-center text-md-left footer-text">
-    <div class="row">
-      
-      <div class="col-md-6 mt-md-0 mt-3">
-        <h5 class="footer-heading">Contact</h5>
-        <ul class="list-unstyled">
-          <li><a class="fa fa-envelope footer-text" href="#"> contactus@gjs-cleaning.com</a></li>
-          <li><a class="fa fa-phone footer-text" href="#"> 810-522-3986</a></li>
-          <li><a class="fa fa-fax footer-text" href="#"> 810-547-1021</a></li>
-        </ul>
-      </div>
-      
-      <hr class="clearfix w-100 d-md-none pb-3">
-      
-      <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="footer-heading">Top Level</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a class="footer-link" href="./home.html">Home</a>
-          </li>
-          <li>
-            <a class="footer-link" href="./about.html">About</a>
-          </li>
-          <li>
-            <a class="footer-link" href="./gallary.html">Gallary</a>
-          </li>
-          <li>
-            <a class="footer-link" href="./services.html">Services</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="footer-heading">Links</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a class="footer-link" href="./residential.html">Residential</a>
-          </li>
-          <li>
-            <a class="footer-link" href="./commercial.html">Commercial</a>
-          </li>
-          <li>
-            <a class="footer-link" href="#!"></a>
-          </li>
-          <li>
-            <a class="footer-link" href="#!"></a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
+  <!--Footer Menu-->
+  <div id="footer-placeholder">
   </div>
-
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 footer-text">© 2019 Copyright:
-    <a href="https://github.com/kasperken">Kenneth Andrews</a>
-  </div>
-
-</footer>
+  
+  <script>
+    $(function(){
+      $("#footer-placeholder").load("includes/footer.html");
+    });
+  </script>
 
 </body>
 </html>

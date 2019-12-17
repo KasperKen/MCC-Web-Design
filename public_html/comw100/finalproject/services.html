@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" charset="UTF-8">
+  <title>Services</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!--Font Library-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Jquery--> 
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <!--bootstrap-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+
+<body>
+
+  <!--Navigation bar-->
+  <div class="sticky-top" id="nav-placeholder">
+  </div>
+  
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("includes/navigation.html");
+    });
+  </script>
+  
+
+  <!--Main Content Area--> 
+
+  <div class="container-fluid section-container">
+    <h1 class="header-text md-center">Our Services</h1>  
+    <div class="row">
+
+      <div class="container-fluid pad col-md-6"> 
+        <div class="card" style="height: 100%;">
+          <img class="card-img-top" src="./images/commercial-services-page.jpg" alt="Commercial Services" >
+          <div class="card-body">
+            <h3 class="card-title">Commercial Services</h3>
+            <p class="card-text">We offer reliability and flexability to accomodate demands of any large or small enterprise.</p>
+            <ul class="pad">
+              <li>High-Rise Window Cleaning</li>
+              <li>Vent Covers and Diffusers</li>
+              <li>Hood Cleaning</li>
+              <li>Stripping and Waxing</li>
+              <li>Powerwashing</li>
+              <li>Carpet Cleaning</li>
+              <li>Flood Cleanups</li>
+              <li>Construction Cleanup</li>
+              <li>Janitorial Services</li>
+              <li>Window Cleaning</li>
+            </ul>
+            <a class="stretched-link no-small" href="commercial.html">Learn More</a>
+            <div class="text-center">
+              <a class="stretched-link dblock d-md-none btn btn-primary" href="./commercial.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid pad col-md-6">
+        <div class="card" style="height: 100%;">
+          <img class="card-img-top" src="./images/residential-card.jpg" alt="Residential Services" >
+          <div class="card-body">
+           <h3 class="card-title">Residential Services</h3>
+           <p class="card-text">We pride ourselves on maintaining a reputation of reliability that you can trust in your home.</p>
+           <ul>
+             <li>Carpet Cleaning</li>
+             <li>Window Cleaning</li>
+             <li>Power Washing</li>
+             <li>Gutter Cleaning</li>
+             <li>High Dusting</li>
+             <li>Flood &amp; Sewer Backups</li>
+             <li>Deck &amp; Siding Cleaning</li>
+           </ul>
+            <a class="stretched-link no-small" href="residential.html">Learn More</a>
+            <div class="text-center">
+              <a class="stretched-link dblock d-md-none btn btn-primary" href="./residential.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+    
+  <!--Back to Top-->
+  <div class="container-fluid mt-5">
+     <p class="text-center">
+       <a class="dblock d-md-none btn btn-primary" href="#">Back to top</a>
+       <a class="no-small" href="#">Back to top</a>
+     </p>
+  </div>
+
+
+<!-- Footer -->
+  <div id="footer-placeholder">
+  </div>
+
+  <script>
+    $(function(){
+      $("#footer-placeholder").load("includes/footer.html");
+    });
+  </script>
+
+
+</body>
+</html>

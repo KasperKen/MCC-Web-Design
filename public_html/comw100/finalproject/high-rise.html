@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" charset="UTF-8">
+  <title>High-Rise Services</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!--Font Library-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Jquery--> 
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <!--bootstrap-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+
+<body>
+
+
+  <!--Navigation bar-->
+  <div class="sticky-top" id="nav-placeholder">
+  </div>
+  
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("includes/navigation.html");
+    });
+  </script>
+  
+  
+
+  <div class="pad container-fluid section-container">
+    <h1 class="pad header-text lg-center">High-Rise Services</h1>
+
+    <div class="row">
+      <div class="section-continer col-lg-5">
+        <img class="img-fluid"  style="border-radius: 15%;" src="./images/high-rise-big.jpg" alt="High Rise Cleaner">
+      </div>
+      <div class="col-lg-7 section-text">
+        <p>We are one of the only high-rise companies in mid-michigan, and nobody can rival our quality or price. We go above and beyond to deliver quality results. We offer a variety of high-rise services to cater to your every need.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pad container-fluid" style="background-color: #f3f3f3;">
+    <div class="section-container">
+      <h2 class="pad header-text lg-center">High-Rise Window Cleaning</h2>
+
+      <div class="row flex-row-reverse">
+        <div class="section-continer-fluid col-lg-5">
+          <img class="img-fluid"  style="border-radius: 15%;" src="./images/high-rise-guy.jpg" alt="vaccume">
+        </div>
+        <div class="col-lg-7 section-text">
+          <p>We have decades of experience in high-rise window cleaning and guarantee satisfaction. We will scrape all the gunk off of your windows and have your glass looking spotless.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid section-container">
+    <h2 class="pad header-text lg-center">Other Services</h2>
+
+    <div class="row">
+      <div class="section-continer-fluid col-lg-5">
+        <img class="img-fluid"  style="border-radius: 15%;" src="./images/high-rise-caulking.jpg" alt="Cute Dog on carpet">
+      </div>
+      <div class="col-lg-7 section-text">
+        <p>We will handle all things high-rise. We'll wash windows as well as caulk, handle roof and cornice work, etc. From a scaffold, lift, or chair, we have you covered.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pad container-fluid" style="background-color: #f3f3f3;">
+    <div class="section-container">
+      <h2 class="pad header-text lg-center">Guaranteed Satisfaction</h2>
+
+      <div class="row flex-row-reverse">
+        <div class="section-continer-fluid col-lg-5">
+          <img class="img-fluid"  style="border-radius: 15%;" src="./images/happy-customer.jpg" alt="Image of satisfied customer">
+        </div>
+        <div class="col-lg-7 section-text">
+          <p>We always maintain the upmost level of professionality. We take pride in pleasing our customers, and go above and beyond to make sure you are completely satisfied with our work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Back to Top-->
+  <div class="container-fluid mt-5">
+     <p class="text-center">
+       <a class="dblock btn-sm d-md-none btn btn-primary" href="#">Back to top</a>
+       <a class="no-small" href="#">Back to top</a>
+     </p>
+  </div>
+
+
+  <!--Footer Menu-->
+  <div id="footer-placeholder">
+  </div>
+
+  <script>
+    $(function(){
+      $("#footer-placeholder").load("includes/footer.html");
+    });
+  </script>
+
+</body>
+</html>
